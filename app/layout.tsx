@@ -21,9 +21,15 @@ const ubuntu = Ubuntu({
   display: 'swap',
 })
 
+
+
+
 export const metadata: Metadata = {
   title: "Dima Oliinyk",
   description: "portfolio",
+  icons: {
+    icon: '/favicon.png',
+  },
 };
 
 export default function RootLayout({
@@ -35,9 +41,10 @@ export default function RootLayout({
     <html lang="en" className="h-full">
       <head>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-plexmono max-w-[420px] bg-[#292F36] min-h-screen overscroll-none m-auto`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased font-plexmono  bg-[#292F36] min-h-screen overscroll-none m-auto`}
       >
         {children}
       </body>
