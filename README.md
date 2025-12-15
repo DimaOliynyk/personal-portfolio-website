@@ -12,23 +12,23 @@ The primary motivation behind this project was to create a modern, professional,
 
 *   **Responsive Design:** Ensures seamless experience across various devices.
 *   **Customizable Template:** Easily adaptable sections for projects, skills, and contact information.
-*   **Modern Tech Stack:** Utilizes [Mention the primary technologies, e.g., React, Next.js, etc.] for a fast and efficient application.
+*   **Modern Tech Stack:** Utilizes Next.js for a fast and efficient application.
 *   **Clear Project Showcase:** Dedicated sections to highlight your best work with descriptions and links to live demos/repos.
 *   **Professional Branding:** Space to include your professional title and contact information.
 
 ## 🚀 Live Demo
 
 You can view the live, deployed version of the website here:
-[**[Link to your deployed website, e.g., dimaoliynyk.com]**](https://dimaoliinyk.com/)
+[**[dimaoliynyk.com]**](https://dimaoliinyk.com/)
 
 ## 🛠️ Tech Stack
 
 This project is built using the following technologies:
 
-*   **[Language/Framework 1]** (e.g., React, Next.js)
-*   **[Language/Framework 2]** (e.g., JavaScript, TypeScript)
-*   **[Styling Library]** (e.g., Tailwind CSS, SCSS)
-*   **[Other Tools/Libraries]** (e.g., Netlify for deployment)
+*   **Next.js** 
+*   **Typescript** 
+*   **Tailwind CSS** 
+*   **Netlify for deployment** 
 
 ## ⚙️ Getting Started
 
@@ -36,20 +36,21 @@ To get a local copy of the project up and running, follow these simple steps:
 
 ### Prerequisites
 
-*   [List any prerequisites, e.g., Node.js, npm, etc.]
+*   **Node**
+*   **Code editor**
 
 ### Installation
 
 1.  Clone the repository:
-    ```bash
-    git clone github.com
+    ```
+    git clone https://github.com/DimaOliynyk/personal-portfolio-website.git
     ```
 2.  Navigate to the project directory:
-    ```bash
+    ```
     cd personal-portfolio-website
     ```
 3.  Install NPM packages:
-    ```bash
+    ```
     npm install
     ```
 
@@ -57,6 +58,6 @@ To get a local copy of the project up and running, follow these simple steps:
 
 To run the project locally in development mode:
 
-```bash
+```
 npm start
 # or npm run dev (depending on your project configuration)
