@@ -19,7 +19,7 @@ The primary motivation behind this project was to create a modern, professional,
 ## 🚀 Live Demo
 
 You can view the live, deployed version of the website here:
-[**[Link to your deployed website, e.g., dimaoliynyk.com]**](URL_OF_YOUR_DEPLOYED_WEBSITE)
+[**[Link to your deployed website, e.g., dimaoliynyk.com]**](https://dimaoliinyk.com/)
 
 ## 🛠️ Tech Stack
 
