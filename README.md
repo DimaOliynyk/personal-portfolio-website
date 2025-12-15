@@ -1,9 +1,5 @@
 # Personal Portfolio Website
 
-[![License: MIT](img.shields.io)](opensource.org)
-[![GitHub Stars](img.shields.io)](github.com)
-[![GitHub Forks](img.shields.io)](github.com)
-
 ## Project Overview
 
 Welcome to my personal portfolio website repository! This project serves as a professional showcase of my skills, projects, and experience as a developer. It's built as a clean, responsive, and customizable template for others in the developer community to adapt for their own use.
