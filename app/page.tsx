@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <header className="pl-[25px] pr-[25px] m-auto"> 
         <div className="flex flex-row bg-[#292F36] h-[70px] justify-between pt-[20px] text-white">
-          <p className="w-[50%] pt-[5px] md:text-[20px]"><span className="text-[#12F7D6]">&lt;C/&gt;</span> DimaOliinyk</p>
+          <a href="/login" className="w-[50%] pt-[5px] md:text-[20px]"><span className="text-[#12F7D6]">&lt;C/&gt;</span> DimaOliinyk</a>
 
           <a href="https://github.com/DimaOliynyk" target="_blank">
             <img src="./github.svg" className="w-[30px] h-[30px]"/>

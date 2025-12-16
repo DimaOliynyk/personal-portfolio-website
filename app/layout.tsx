@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Ubuntu } from 'next/font/google'
 
+import Providers from "./providers";
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -46,7 +48,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased font-plexmono  bg-[#292F36] min-h-screen overscroll-none m-auto`}
       >
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
