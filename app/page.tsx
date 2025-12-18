@@ -205,56 +205,110 @@ export default function Home() {
           </div>
         </div>
         
-        <div className="w-full bg-[#292F36]">
-          <div className="m-auto pb-[65px] pt-[65px]">
-            <p className={`text-center text-[60px] text-[#12F7D6] ${ubuntu.className}`}>Works</p>
+        <div className="w-full bg-[#292F36] py-16 sm:py-20 lg:py-24">
+  {/* Section Header */}
+  <div className="text-center mb-12 sm:mb-16 px-4">
+    <p className={`text-4xl sm:text-5xl lg:text-6xl text-[#12F7D6] ${ubuntu.className}`}>
+      Works
+    </p>
 
-            <img src="./line.png" className="m-auto"/>
+    <img src="./line.png" className="m-auto my-3 w-[120px] sm:w-[160px]" />
 
-            <p className="text-white text-center mt-[20px] w-[270px] m-auto">I had the pleasure of working with these awesome projects</p>
+    <p className="text-white max-w-md m-auto text-sm sm:text-base">
+      I had the pleasure of working with these awesome projects
+    </p>
+  </div>
+
+  {/* Projects Grid */}
+  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 max-w-7xl m-auto px-4 sm:px-6 lg:px-10">
+    
+    {/* Project Card */}
+    <div className="bg-[#1A1E23] rounded-3xl border-l-4 sm:border-l-[6px] border-[#12F7D6] p-5 sm:p-6 lg:p-8 shadow-lg transition hover:scale-[1.02]">
+      
+      <h3 className={`text-white text-xl sm:text-2xl lg:text-[28px] ${ubuntu.className}`}>
+        Solo App Planner
+      </h3>
+
+      <p className="text-[#E9E9E9] mt-2 sm:mt-3 mb-5 text-sm sm:text-base leading-relaxed">
+        Solo Plan is a lightweight productivity app designed to help you manage tasks with ease.
+      </p>
+
+      {/* Images */}
+      <div className="grid grid-cols-3 gap-2 sm:gap-3 mb-6">
+        {[
+          "./Login.png",
+          "./Homepage- With Data.png",
+          "./Schedule.png",
+        ].map((img, i) => (
+          <div key={i} className="aspect-[9/16] overflow-hidden rounded-xl">
+            <img
+              src={img}
+              className="w-full h-full object-cover hover:scale-105 transition"
+            />
           </div>
+        ))}
+      </div>
 
-          <div className="flex flex-col max-w-[425px] m-auto h-[1050px] block">
-            <div>
-              <h3 className={`text-center text-white text-[26px] ${ubuntu.className}`}>Solo App Planer</h3>
-              <p className="text-center text-[15px] w-[300px] m-auto text-[#E9E9E9] mt-[10px] mb-[10px] ">Solo Plan is a lightweight productivity app designed to help you manage tasks with ease.</p>
-              
-              <div className="flex flex-row mt-[15px] mb-[15px] ml-[30px] mr-[30px] justify-between ">
-                <img src="./Login.png" className="w-[100px] h-[200px] rounded-[5px]"/>
-                <img src="./Homepage- With Data.png" className="w-[100px] h-[200px] rounded-[5px]"/>
-                <img src="./Schedule.png" className="w-[100px] h-[200px] rounded-[5px]"/>
-              </div>
-              <div className="flex flex-row m-auto mt-[30px]">
-                <a href="https://github.com/DimaOliynyk/solo-plan" target="_blank" className="m-auto mr-[0px]  w-[50px] h-[50px] rounded-xl bg-white">
-                  <img src="./icons8-github-96.png" className="w-[40px] h-[40px] m-auto mt-[5px]"/>
-                </a>
-                <a href="https://solo-plan-eight.vercel.app/login" target="_blank" className="m-auto w-[50px] h-[50px] ml-[15px] rounded-xl bg-white">
-                  <img src="./icons/icons8-hyperlink-96.png" className="w-[40px] h-[40px] m-auto ml-[5px] mt-[5px]"/>
-                </a>
-              </div>
-            </div>
+      {/* Links */}
+      <div className="flex gap-4">
+        <a
+          href="https://github.com/DimaOliynyk/solo-plan"
+          target="_blank"
+          className="w-11 h-11 sm:w-12 sm:h-12 bg-white rounded-xl flex items-center justify-center"
+        >
+          <img src="./icons8-github-96.png" className="w-6 sm:w-7" />
+        </a>
 
-            <div className="w-[80%] h-[1px] bg-[#43454D] rounded-xl m-auto mt-[30px] mb-[30px]"></div>
+        <a
+          href="https://solo-plan-eight.vercel.app/login"
+          target="_blank"
+          className="w-11 h-11 sm:w-12 sm:h-12 bg-white rounded-xl flex items-center justify-center"
+        >
+          <img src="./icons/icons8-hyperlink-96.png" className="w-6 sm:w-7" />
+        </a>
+      </div>
+    </div>
 
-            <div className="">
-              <h3 className={`text-center text-white text-[26px] ${ubuntu.className}`}>Vegetables Shop</h3>
-              <p className="text-center text-[15px] w-[300px] m-auto text-[#E9E9E9] mt-[10px] mb-[10px] ">A simple and inviting website built for a regional produce vendor, showcasing seasonal goods and easy-to-find service information.</p>
-              
-              <div className="flex flex-row mt-[15px] mb-[15px] ml-[30px] mr-[30px] justify-between ">
-                <img src="./portfolio/photo1-fuerstenberg.jpg" className="w-[100px] h-[200px] rounded-[5px]"/>
-                <img src="./portfolio/photo2-fuerstenberg.jpg" className="w-[100px] h-[200px] rounded-[5px]"/>
-                <img src="./portfolio/photo3-fuerstenberg.jpg" className="w-[100px] h-[200px] rounded-[5px]"/>
-              </div>
-              <div className="flex flex-row m-auto mb-[20px] mt-[30px]">
-                <a href="https://fuerstenberg-langballig.de/" target="_blank" className="m-auto w-[50px] h-[50px] rounded-xl bg-white">
-                  <img src="./icons/icons8-hyperlink-96.png" className="w-[40px] h-[40px] m-auto ml-[5px] mt-[5px]"/>
-                </a>
-              </div>
-              
-              
-            </div>
+    {/* Project Card */}
+    <div className="bg-[#1A1E23] rounded-3xl border-l-4 sm:border-l-[6px] border-[#12F7D6] p-5 sm:p-6 lg:p-8 shadow-lg transition hover:scale-[1.02]">
+      
+      <h3 className={`text-white text-xl sm:text-2xl lg:text-[28px] ${ubuntu.className}`}>
+        Vegetables Shop
+      </h3>
+
+      <p className="text-[#E9E9E9] mt-2 sm:mt-3 mb-5 text-sm sm:text-base leading-relaxed">
+        A simple and inviting website built for a regional produce vendor,
+        showcasing seasonal goods.
+      </p>
+
+      {/* Images */}
+      <div className="grid grid-cols-3 gap-2 sm:gap-3 mb-6">
+        {[
+          "./portfolio/photo1-fuerstenberg.jpg",
+          "./portfolio/photo2-fuerstenberg.jpg",
+          "./portfolio/photo3-fuerstenberg.jpg",
+        ].map((img, i) => (
+          <div key={i} className="aspect-[9/16] overflow-hidden rounded-xl">
+            <img
+              src={img}
+              className="w-full h-full object-cover hover:scale-105 transition"
+            />
           </div>
-        </div>
+        ))}
+      </div>
+
+      <a
+        href="https://fuerstenberg-langballig.de/"
+        target="_blank"
+        className="w-11 h-11 sm:w-12 sm:h-12 bg-white rounded-xl flex items-center justify-center"
+      >
+        <img src="./icons/icons8-hyperlink-96.png" className="w-6 sm:w-7" />
+      </a>
+    </div>
+
+  </div>
+</div>
+
       </main>
 
       <footer className={`bg-[#292F36] h-[100px] ${ubuntu.className} p-6`}>

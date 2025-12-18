@@ -22,7 +22,7 @@ export default function Login() {
             Sign in to your account
           </h1>
 
-          <form className="space-y-4" onSubmit={handleSubmit}>
+          <form className="space-y-4">
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Username
